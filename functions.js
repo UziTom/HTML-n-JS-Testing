@@ -1,4 +1,6 @@
 
+// Settings dis_hook for the first time
+dis_hook = null;
 
  function genToken() {
 	if (localStorage.getItem('token') !== null) {
